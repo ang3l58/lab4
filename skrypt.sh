@@ -10,3 +10,8 @@ echo '    echo "Filename: $filename" > $filename' >> skrypt.sh
 echo '    echo "Script: skrypt.sh" >> $filename' >> skrypt.sh
 echo '    date >> $filename' >> skrypt.sh
 echo '  done' >> skrypt.sh
+echo 'elif [[ $1 == "--help" ]]; then' >> skrypt.sh
+echo '  echo "Available options:"' >> skrypt.sh
+echo '  echo "--date: Display current date"' >> skrypt.sh
+echo '  echo "--logs [num]: Create num log files (default: 100)"' >> skrypt.sh
+echo '  echo "--help: Display help"' >> skrypt.sh
